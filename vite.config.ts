@@ -38,7 +38,7 @@ function fontDisplaySwap() {
 
 export default defineConfig({
   plugins: [vue(), nonBlockingCss(), fontDisplaySwap()],
-  base: import.meta.env.VITE_BASE_URL || '/',
+  base: process.env.VITE_BASE_URL || '/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
